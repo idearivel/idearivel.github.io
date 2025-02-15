@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend+Zetta:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #323131;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+header img {
+    width: 45px;
+}
+
+header p {
+    margin: 0;
+}
+
+.slt {
+    color: white;
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 18px; 
+}
+
+.free-music {
+    color: white;
+    font-weight: 300;
+    font-family: "Lexend Zetta", sans-serif;
+    font-size: 14px; 
+    margin-left: -30px;
+}
+
+.top-navigation nav {
+    display: flex; 
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.top-navigation nav a {
+    color: white; 
+    text-decoration: none; 
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; 
+}
+
+.top-navigation nav a:hover{
+    text-decoration: underline;
+}
+
+header > img{
+    margin-left: auto;
+}
+
+.login-text{
+    padding-right: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+/* Стили для .banner */
+.banner {
+    overflow: hidden; /* Скрываем часть изображения, которая выходит за пределы контейнера */
+    display: flex;
+    justify-content: center; /* Центрируем изображение по горизонтали */
+    align-items: center; /* Центрируем изображение по вертикали */
+    margin-top: 25px;
+}
+
+.banner img {
+    width: 1250px; /* Размер изображения */
+    transition: transform 0.045s ease; /* Плавное изменение свойства transform за 0.5 секунд */
+}
+
+.banner img:hover {
+    transform: scale(0.98); /* Увеличиваем изображение на 10% */
+}
+
+/*Main content*/
+.page-content {
+    display: flex; /* Используем Flexbox для выравнивания блоков */
+    justify-content: space-between; /* Распределяем пространство между блоками */
+    margin-top: 30px; /* Отступ сверху, как у .playlists */
+}
+
+.page-content .playlists {
+    background-color: #ECECEC;
+    font-family: "Open Sans", sans-serif;
+    width: 280px;
+    margin-left: 143px; /* Отступ слева 143px */
+}
+
+.page-content .fests {
+    background-color: #ECECEC;
+    font-family: "Open Sans", sans-serif;
+    width: 280px;
+    margin-right: 143px; /* Отступ справа 143px */
+}
+
+.page-content .playlists > p,
+.page-content .fests > p {
+    padding-left: 85px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.page-content .playlists nav img,
+.page-content .fests nav img {
+    width: 35px;
+    padding-left: 15px;
+    margin-bottom: -5px;
+}
+
+.page-content .playlists nav a,
+.page-content .fests nav a {
+    padding-left: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.page-content .playlists nav a:hover,
+.page-content .fests nav a:hover {
+    text-decoration: underline;
+}
+
+.main .music .agata-kristi-pirat img{
+    width: 40px;
+}
+
+.custom-audio-player {
+    display: inline-block;
+    gap: 10px;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.custom-audio-player button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #893875;
+}
+
+.custom-audio-player #play-pause-btn {
+    font-size: 25px;
+    color: #893875;
+}
+
+.custom-audio-player input[type="range"] {
+    flex-grow: 1;
+    cursor: pointer;
+    accent-color: #893875;
+}
+
+/* Уменьшаем длину ползунка громкости */
+.custom-audio-player #volume-bar {
+    width: 50px; /* Задаем фиксированную ширину */
+}
+
+.custom-audio-player span {
+    font-size: 14px;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+}
